@@ -81,4 +81,15 @@ document.addEventListener('DOMContentLoaded', () => {
             navbarToggler.setAttribute('aria-expanded', 'false');
         }
     });
+
+      // Add structured data for the logo
+    const ldJsonScript = document.createElement('script');
+    ldJsonScript.type = 'application/ld+json';
+    ldJsonScript.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.daptojiujitsu.com",
+        "logo": "https://www.daptojiujitsu.com/logo.png"
+    });
+    document.head.appendChild(ldJsonScript);
 });
