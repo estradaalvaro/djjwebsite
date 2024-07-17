@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+F/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +60,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background: url('background.JPG') no-repeat center center/cover;
+    background: url('background.jpg') no-repeat center center/cover;
     color: #30bec1;
     text-align: center;
     height: 100vh; /* Make the hero section take the full height of the viewport */
