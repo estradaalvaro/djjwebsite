@@ -1,4 +1,4 @@
-F/* Reset some default browser styles */
+/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ header {
 }
 
 .logo img {
-    max-height: 50px;
+    max-height: 100px;
 }
 
 #home {
@@ -60,7 +60,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url('header-background.JPG') no-repeat center center/cover;
     color: #30bec1;
     text-align: center;
     height: 100vh; /* Make the hero section take the full height of the viewport */
@@ -97,12 +97,14 @@ header {
 .btn-primary {
     background-color: #ee2d7b;
     color: #fff;
-    padding: 0.8rem 1.5rem;
+    padding: 2rem 3rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 65px;
     text-decoration: none;
     font-weight: 700;
     transition: background-color 0.3s;
+    font-size: 1.5rem;
+    display: inline-block; /* Ensure the button respects container width */
 }
 
 .btn-primary:hover {
@@ -155,8 +157,10 @@ section h2 {
 
 /* Square Profile Pictures for Our Programs */
 #programs .profile-card img {
-    width: 150px;
-    height: 150px;
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%; /* Ensure the image scales with the container */
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     border-radius: 10px; /* Square with slightly rounded corners */
     margin-bottom: 1rem;
@@ -164,8 +168,10 @@ section h2 {
 
 /* Circular Profile Pictures for Our Coaches */
 #coaches .profile-card img {
-    width: 150px;
-    height: 150px;
+    max-width: 22rem;
+    max-height: 22rem;
+    width: 100%; /* Ensure the image scales with the container */
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1rem;
@@ -472,7 +478,9 @@ footer {
 .footer-info p {
     margin-bottom: 1rem;
 }
-
+.footer-flag {
+    max-height: 30px;
+}
 .social-links {
     display: flex;
     justify-content: center;
